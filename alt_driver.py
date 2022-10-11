@@ -30,7 +30,7 @@ while True:
 			print(x1, y1)
 			# check if the mouse has moved
 			if x == x1 and y == y1:
-				# if it hasn't, then check if the previous possition is close to the current one
+				# if it hasn't, then check if the previous position is close to the current one
 				while math.isclose(x, x1) and math.isclose(y, y1):
 					# hold left mouse button down
 					pyautogui.mouseDown()
