@@ -5,6 +5,8 @@ import pyautogui
 import time
 import math
 
+i = 5
+
 # change time.sleep() to wait() because I kept typing it by mistake
 def wait(t):
 	time.sleep(t)
@@ -17,8 +19,8 @@ while True:
 		y = data["root_y"]
 		# display results
 		print(x, y)
-		# check if screen is being touched
-		if mouse.is_pressed("left") == True:
+		# start loop
+		if i = 5:
 			x1 = x
 			y1 = y
 			wait(0.5)
@@ -31,7 +33,7 @@ while True:
 			# check if the mouse has moved
 			if x == x1 and y == y1:
 				# if it hasn't, then check if the previous position is close to the current one
-				while math.isclose(x, x1) and math.isclose(y, y1):
+				while math.isclose(x, x1, rel_tol=500) and math.isclose(y, y1, rel_tol=500):
 					# hold left mouse button down
 					pyautogui.mouseDown()
 				else:
