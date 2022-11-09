@@ -13,6 +13,7 @@ i = 5
 pyautogui.FAILSAFE = False
 
 while True:
+	wait(0.5)
 	# check mouse possition
 	data = display.Display().screen().root.query_pointer()._data
 	x = data["root_x"]
